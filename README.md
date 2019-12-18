@@ -5,3 +5,9 @@ select * from table where fullname REGEXP BINARY '([A-Z][a-z0-9]+){2}' AND statu
 ```
 
 // ([A-Z][a-z0-9]+){2}
+
+Para remplazar en PHP
+
+```php
+preg_match_all('/((?:^|[A-Z])[a-z]+)/',$str,$matches);
+```
